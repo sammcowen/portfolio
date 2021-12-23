@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background:url("../images/galaxy-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:30px;  
+    font-size: 40px;
+
+}
+header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F01D7F;
+    display: inline-block;
+    align-self: flex-end;
+    
+    
+}
+header nav ul {
+    display:flex;
+    flex-direction:row;
+    list-style-type:none;
+}
+
+ header nav ul li a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F01D7F;
+    font-size: 30px;
+    justify-content:space-between;
+        
+}
+
