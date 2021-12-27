@@ -1,33 +1,123 @@
 header {
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    background:url("../images/galaxy-bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding:30px;  
-    font-size: 40px;
-
+    align-items: row;
+    background-image: url("../images/galaxy-bg.jpg");
+    height: 130px;
+    flex-wrap:wrap;
 }
 header h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #F01D7F;
-    display: inline-block;
+    font-size: 55px;
+    color:#E31C79;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-self: flex-end;
-    
-    
-}
-header nav ul {
-    display:flex;
-    flex-direction:row;
-    list-style-type:none;
-}
+    margin: 0;
+    padding:0;
 
- header nav ul li a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #F01D7F;
+}
+nav  {
+    background-color: black;
+    align-self: flex-end;
+    flex-wrap:wrap;
+    
+
+
+
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li {
+   display:inline;
+  
+
+}
+nav ul li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#E31C79;
     font-size: 30px;
-    justify-content:space-between;
-        
+    text-decoration: none;
+    line-height: 1px;
+    padding: 5px;
+    margin: 5px;
 }
+nav a:hover {
+    color: white;
+}
+body {
+    background-color: black;
+}
+#about-me {
+    display:flex;
+    justify-content:space-evenly;
+    background-color: white;
+    border-radius:30px;
+    height: 150px;
+    border-top: 25px;
+    flex-wrap:wrap;
+}
+.about-me h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 35px;
+    text-decoration: underline dotted #E31C79;
+    align-self:center;
+}
+.about-me p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    flex-direction:row;
+    flex-wrap:wrap;
+    color:#E31C79;
+    align-self:center;
+    flex-wrap:wrap;
+}
+#contact-me {
+    display:flex;
+    justify-content:space-around;
+    background-color: white;
+    border-radius:30px;
+    height: 150px;
+    width: 100%;
+    border-top: 25px;
+    flex-wrap: wrap;
 
+    
+}
+.contact-me h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 35px;
+    text-decoration: underline dotted #E31C79;
+    align-self:center;
+}
+.contact-me ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-self:center;
+    flex-wrap:wrap;
+}
+.contact-me ul li {
+    display:inline-block;
+    color:#E31C79;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    line-height: 1px;
+    padding: 10px;
+    margin: 10px;
+}
+.contact-me ul li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#E31C79;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1px;
+    padding: 5px;
+    margin: 5px;
+}
+.contact-me a:hover {
+    color:black;
+}
