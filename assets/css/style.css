@@ -1,23 +1,27 @@
 header {
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: row;
     background-image: url("../images/galaxy-bg.jpg");
-    height: 130px;
+    height: auto;
     flex-wrap:wrap;
 }
+header img {
+    border-radius:25%;
+    height: 100px;
+    width: 100px;
+}
 header h1 {
-    font-size: 55px;
+    font-size: 42px;
     color:#E31C79;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-self: flex-end;
-    margin: 0;
-    padding:0;
+    margin: 1px;
+    padding:1px;
 
 }
 nav  {
-    background-color: black;
-    align-self: flex-end;
+    flex-direction:column;
     flex-wrap:wrap;
     
 
@@ -25,23 +29,23 @@ nav  {
 
 }
 nav ul {
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 10px;
     list-style-type: none;
 }
 nav ul li {
-   display:inline;
-  
+    padding: 5px;
 
 }
 nav ul li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:#E31C79;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     line-height: 1px;
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+    margin: 2px;
+
 }
 nav a:hover {
     color: white;
@@ -51,19 +55,20 @@ body {
 }
 #about-me {
     display:flex;
-    justify-content:space-evenly;
+    flex-direction:column;
+    justify-content:center;
     background-color: white;
-    border-radius:30px;
-    height: 150px;
-    border-top: 25px;
+    border-radius:15px;
+    height:auto;
     flex-wrap:wrap;
 }
 .about-me h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    font-size: 35px;
+    font-size: 42px;
     text-decoration: underline dotted #E31C79;
     align-self:center;
+    
 }
 .about-me p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -73,6 +78,23 @@ body {
     color:#E31C79;
     align-self:center;
     flex-wrap:wrap;
+}
+#my-work {
+    display:flex;
+    justify-content:space-between;
+    background-color: white;
+    border-radius:30px;
+    height: 150px;
+    border-top: 25px;
+    flex-wrap:wrap;
+
+}
+.my-work h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 35px;
+    text-decoration: underline dotted #E31C79;
+    align-self:center;
 }
 #contact-me {
     display:flex;
@@ -120,4 +142,11 @@ body {
 }
 .contact-me a:hover {
     color:black;
+}
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+
 }
