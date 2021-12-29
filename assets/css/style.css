@@ -210,31 +210,35 @@ main {
         display:flex;
         background-color:#eee6da;
         border-radius: 15px;
-        margin: 30px;
-        justify-content: center;
+        margin: 0px;
+        padding: 5px;
+        justify-content: space-between;
         align-items: row;
         height: auto;
         flex-wrap:wrap;
         border: #ab8f80 5px solid;
+        flex-direction: row-reverse;
     }
     header img {
         border-radius:25%;
         width: 150px;
+        align-self:center;
         
     }
     header h1 {
-        font-size: 42px;
+        font-size: 45px;
         color:#625549;
         font-family: Arial, Helvetica, sans-serif;
-        align-self: flex-end;
         margin: 1px;
         padding:1px;
+        align-self:flex-end;
+        display:inline-block;
     
     }
     nav  {
         flex-direction:column;
         flex-wrap:wrap;
-        
+        align-self:center;
     
     
     
@@ -251,11 +255,12 @@ main {
     nav ul li a {
         font-family: Arial, Helvetica, sans-serif;
         color:#625549;
-        font-size: 25px;
+        font-size: 30px;
         text-decoration: none;
         line-height: inherit;
         padding: 2px;
         margin: 2px;
+        
     
     }
     nav a:hover {
@@ -267,22 +272,23 @@ main {
     #about-me {
         display:flex;
         flex-direction:column;
-        justify-content:center;
+        justify-content:space-between;
         border-radius:15px;
         height:auto;
         flex-wrap:wrap;
+        
     }
     .about-me h2 {
         font-family:Arial, Helvetica, sans-serif;
         color: #625549;
-        font-size: 35px;
+        font-size: 45px;
        border-bottom: #625549 3px solid;
         align-self:center;
         padding: 20px;
     }
     .about-me p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: 22px;
         flex-direction:row;
         flex-wrap:wrap;
         color:#625549;
@@ -290,51 +296,69 @@ main {
         flex-wrap:wrap;
         padding: 20px;
     }
-    .run-buddy-img img {
-        
+    .run-buddy-img  {
+        position: relative;
+        height: auto;
+        margin-left:auto;
+        margin-right: auto;
         width: 250px;
         border-radius: 25%;
-        
        
     }
+    .run-buddy-img img {
+        height:auto;
+        width:250px;
+        border-radius: 25%;
+    }
+    .run-buddy-title {
+        position: absolute;
+        top: 93px;
+        left:50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: #eee6da;
+        
+    }
     
-    .calculator-img img{
-        width: 125px;
-        border-radius: 25%;
-        
+    .disabled {
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        padding-bottom: 8px;
+    
+    
     }
-    .pastel-puzzle-img img {
-        width: 125px;
+    .disabled img {
+        height: 100px;
+        width:125px;
         border-radius: 25%;
-        
+        margin: 2px;
     }
+    
+    
     
     #my-work {
         display:flex;
-        background-color: #ab8f80;
-        margin: 30px;
-        flex-direction:row;
+        background-color: #625549;
+        margin: 20px;
+        flex-direction:column;
         justify-content:center;
         border-radius:15px;
         height: auto;
         flex-wrap:wrap;
         border-radius: 15px;
+        padding: 0px;
+        
     }
     .my-work h2 {
         font-family:Arial, Helvetica, sans-serif;
-        color: #625549;
-        font-size: 35px;
-       border-bottom: #625549 3px solid;
+        color: #eee6da;
+        font-size: 45px;
+       border-bottom: #eee6da 3px solid;
         align-self:center;
         padding: 20px;
     }
-    .run-buddy-img a, .pastel-puzzle-img a, .calculator-img a {
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        color:#625549;
-      background-color: #eee6da;
     
-    }
     #contact-me {
         display:flex;
         flex-direction: column;
@@ -350,7 +374,7 @@ main {
     .contact-me h2 {
         font-family:Arial, Helvetica, sans-serif;
         color: #625549;
-        font-size: 35px;
+        font-size: 45px;
        border-bottom: #625549 3px solid;
         align-self:center;
         padding: 20px;
@@ -368,7 +392,7 @@ main {
         display:inline-block;
         color:#eee6da;
         font-family: Arial, Helvetica, sans-serif;
-        font-size:20px;
+        font-size:22px;
         line-height: 1px;
         padding: 10px;
         margin: 10px;
@@ -376,7 +400,7 @@ main {
     .contact-me ul li a {
         font-family: Arial, Helvetica, sans-serif;
         color:#eee6da;
-        font-size: 15px;
+        font-size: 20px;
         text-decoration: none;
         line-height: 1px;
         padding: 5px;
@@ -388,8 +412,8 @@ main {
     main {
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         min-height: 100vh;
     
-    }   
+    }
 }
