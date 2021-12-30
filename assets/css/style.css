@@ -1,4 +1,5 @@
-header {
+/** HEADER STYLING* */
+header { 
     display:flex;
     background-color:#eee6da;
     border-radius: 15px;
@@ -56,9 +57,18 @@ nav ul li a {
 nav a:hover {
     color: #ab8f80;
 }
+/* BODY STYLING */
 body {
     background-color: white;
 }
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+/*** ABOUT ME SECTION  ***/
 #about-me {
     display:flex;
     flex-direction:row;
@@ -84,6 +94,27 @@ body {
     color:#625549;
     align-self:center;
     flex-wrap:wrap;
+    padding: 20px;
+}
+/*** MY WORK SECTION ***/
+#my-work {
+    display:flex;
+    background-color: #625549;
+    margin: 20px;
+    flex-direction:row;
+    justify-content:center;
+    border-radius:15px;
+    height: auto;
+    flex-wrap:wrap;
+    border-radius: 15px;
+    
+}
+.my-work h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #eee6da;
+    font-size: 35px;
+   border-bottom: #eee6da 3px solid;
+    align-self:center;
     padding: 20px;
 }
 .run-buddy-img  {
@@ -123,29 +154,7 @@ body {
     border-radius: 25%;
     margin: 2px;
 }
-
-
-
-#my-work {
-    display:flex;
-    background-color: #625549;
-    margin: 20px;
-    flex-direction:row;
-    justify-content:center;
-    border-radius:15px;
-    height: auto;
-    flex-wrap:wrap;
-    border-radius: 15px;
-    
-}
-.my-work h2 {
-    font-family:Arial, Helvetica, sans-serif;
-    color: #eee6da;
-    font-size: 35px;
-   border-bottom: #eee6da 3px solid;
-    align-self:center;
-    padding: 20px;
-}
+/* ** CONTACT ME SECTION* **/
 
 #contact-me {
     display:flex;
@@ -197,15 +206,10 @@ body {
 .contact-me a:hover {
     color:#ab8f80;
 }
-main {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
 
-}
-/* Media Queries */
+/***  MEDIA QUERIES  ***/
 @media screen and (min-width:768px) {
+    /* HEADER SECTION */
     header {
         display:flex;
         background-color:#eee6da;
@@ -268,9 +272,18 @@ main {
     nav a:hover {
         color: #ab8f80;
     }
+    /* BODY STYLING */
     body {
         background-color: white;
     }
+    main {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    
+    }
+    /* ABUT ME SECTION */
     #about-me {
         display:flex;
         flex-direction:column;
@@ -296,6 +309,28 @@ main {
         color:#625549;
         align-self:center;
         flex-wrap:wrap;
+        padding: 20px;
+    }
+    /* MY WORK SECTION  */
+    #my-work {
+        display:flex;
+        background-color: #625549;
+        margin: 20px;
+        flex-direction:column;
+        justify-content:center;
+        border-radius:15px;
+        height: auto;
+        flex-wrap:wrap;
+        border-radius: 15px;
+        padding: 0px;
+        
+    }
+    .my-work h2 {
+        font-family:Arial, Helvetica, sans-serif;
+        color: #eee6da;
+        font-size: 45px;
+       border-bottom: #eee6da 3px solid;
+        align-self:center;
         padding: 20px;
     }
     .run-buddy-img  {
@@ -336,31 +371,7 @@ main {
         border-radius: 25%;
         margin: 2px;
     }
-    
-    
-    
-    #my-work {
-        display:flex;
-        background-color: #625549;
-        margin: 20px;
-        flex-direction:column;
-        justify-content:center;
-        border-radius:15px;
-        height: auto;
-        flex-wrap:wrap;
-        border-radius: 15px;
-        padding: 0px;
-        
-    }
-    .my-work h2 {
-        font-family:Arial, Helvetica, sans-serif;
-        color: #eee6da;
-        font-size: 45px;
-       border-bottom: #eee6da 3px solid;
-        align-self:center;
-        padding: 20px;
-    }
-    
+    /* CONTACT ME SECTION  */
     #contact-me {
         display:flex;
         flex-direction: column;
@@ -411,16 +422,10 @@ main {
     .contact-me a:hover {
         color:#ab8f80;
     }
-    main {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 100vh;
-    
-    }
 }
 @media screen and (min-width:980px) {
-        header {
+        /*HEADER SECTION   */
+    header {
             display:flex;
             background-color:#eee6da;
             border-radius: 15px;
@@ -483,6 +488,14 @@ main {
         body {
             background-color: white;
         }
+        main {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        
+        }
+        /* ABOUT ME SECTION */
         #about-me {
             display:flex;
             flex-direction:column;
@@ -508,6 +521,30 @@ main {
             color:#625549;
             align-self:center;
             flex-wrap:wrap;
+            padding: 20px;
+        }
+        
+        
+        /* MY WORK SECTION  */
+        #my-work {
+            display:flex;
+            background-color: #625549;
+            margin: 20px;
+            flex-direction:column;
+            justify-content:center;
+            border-radius:15px;
+            height: auto;
+            flex-wrap:wrap;
+            border-radius: 15px;
+            padding: 0px;
+            
+        }
+        .my-work h2 {
+            font-family:Arial, Helvetica, sans-serif;
+            color: #eee6da;
+            font-size: 45px;
+           border-bottom: #eee6da 3px solid;
+            align-self:center;
             padding: 20px;
         }
         .run-buddy-img  {
@@ -549,30 +586,7 @@ main {
             margin: 2px;
         }
         
-        
-        
-        #my-work {
-            display:flex;
-            background-color: #625549;
-            margin: 20px;
-            flex-direction:column;
-            justify-content:center;
-            border-radius:15px;
-            height: auto;
-            flex-wrap:wrap;
-            border-radius: 15px;
-            padding: 0px;
-            
-        }
-        .my-work h2 {
-            font-family:Arial, Helvetica, sans-serif;
-            color: #eee6da;
-            font-size: 45px;
-           border-bottom: #eee6da 3px solid;
-            align-self:center;
-            padding: 20px;
-        }
-        
+        /* CONTACT ME SECTION */
         #contact-me {
             display:flex;
             flex-direction: column;
@@ -623,11 +637,5 @@ main {
         .contact-me a:hover {
             color:#ab8f80;
         }
-        main {
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
-        
-        }
+       
     }
